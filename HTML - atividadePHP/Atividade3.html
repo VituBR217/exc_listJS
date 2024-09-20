@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 3</title>
+        <script>
+            function Copiar(Escrever, Copiar) {
+                let nEscrever = document.getElementById(Escrever).value
+                document.getElementById(Copiar).innerHTML=nEscrever
+            }
+        </script>
+    </head>
+    <body>
+        <input type="text" id="tEscrever" name="tEscrever" placeholder="Escreva alguma coisa">
+        <br>
+        <button onclick="Copiar('tEscrever', 'cCopiar')">Copiar</button>
+        <br>
+        <br>
+        <div id="cCopiar" name="cCopiar">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 2</title>
+        <script>
+            function Verificar() {
+                let X = parseInt(document.getElementById("lX").value);
+                let Y = parseInt(document.getElementById("lY").value);
+
+                if(X>Y){
+                    document.getElementById("dVerificar").innerHTML="O número "+X+" é maior"
+                }
+                else{   
+                    document.getElementById("dVerificar").innerHTML="O número "+Y+" é maior"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <label>Escreva um número: </label>
+        <input type="text" id="lX" name="lX">
+        <br>
+        <label>Agora, outro número: </label>
+        <input type="text" id="lY" name="lY">
+        <br>
+        <br>
+        <button onclick="Verificar()">Verificar</button>
+        <br>
+        <p id="dVerificar" name="dVerificar"></p>
+    </body>
+</html>

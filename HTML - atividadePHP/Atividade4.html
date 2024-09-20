@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 4</title>
+        <script>
+            function Verificar(Numero, Escrever) {
+                let nNumero = parseInt(document.getElementById(Numero).value)
+
+                if(nNumero>0)
+                    document.getElementById(Escrever).innerHTML="Este número é maior que 0"
+                else if(nNumero==0)
+                    document.getElementById(Escrever).innerHTML="Este número é igual a 0"
+                else if(nNumero<0)
+                    document.getElementById(Escrever).innerHTML="Este número é menor que 0"
+                else
+                    document.getElementById(Escrever).innerHTML="Nenhum número foi digitado"
+            }
+        </script>
+    </head>
+    <body>
+        <label>Escreva um número qualquer:</label>
+        <input type="text" id="lNumero" name="lNumero">
+        <br>
+        <button onclick="Verificar('lNumero', 'tEscrever')">Verificar</button>
+        <br>
+        <br>
+        <p id="tEscrever" name="tEscrever"></p>
+    </body>
+</html>

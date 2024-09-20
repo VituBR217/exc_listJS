@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade 8</title>
+        <script> 
+
+            let Calculo = 0;
+
+            function Calcular(){
+                let X = prompt("Dê um número:");
+                let intX = parseInt(X);
+                Calculo = 0;
+
+                while(intX > 0){ 
+                    Calculo += intX;
+                    X = prompt("Dê um número:");
+                    intX = parseInt(X);
+                }
+            }
+
+            function Mostrar(idElemento) {
+                const Resultado = "Resultado da soma: " + Calculo; 
+                document.getElementById(idElemento).innerHTML = Resultado;
+            }
+            
+        </script>
+    </head>
+    <body>
+        <h1>Teste</h1>
+
+        <button onclick="Calcular()">Iniciar</button>
+        <button onclick="Mostrar('wTexto')">Mostrar</button>
+
+        <p id="wTexto" name="wTexto"></p>
+    </body>
+</html>
